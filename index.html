@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TalentBridge Pro | 智能人才招聘管理系統</title>
+    <!-- 引入 Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 引入 Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- 引入 FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        body { font-family: 'Noto Sans TC', sans-serif; }
+        .gradient-bg { background: linear-gradient(90deg, #1e3a8a 0%, #3b82f6 100%); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- 導航欄 -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-blue-800"><i class="fas fa-bridge mr-2"></i>TalentBridge Pro</span>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#features" class="text-gray-600 hover:text-blue-600 font-medium">核心功能</a>
+                    <a href="#how-it-works" class="text-gray-600 hover:text-blue-600 font-medium">運作流程</a>
+                    <a href="#pricing" class="text-gray-600 hover:text-blue-600 font-medium">企業方案</a>
+                    <a href="#" class="text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition">登入</a>
+                    <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition shadow">免費試用</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero 區域 -->
+    <header class="pt-32 pb-20 gradient-bg text-white">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
+                    AI 驅動的<br>下一代招聘管理系統
+                </h1>
+                <p class="text-xl text-blue-100 mb-8">
+                    告別繁瑣的簡歷篩選。TalentBridge Pro 利用大數據與機器學習，精準匹配企業需求與頂尖人才，縮短 40% 招聘週期。
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#" class="bg-white text-blue-800 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition shadow-lg">開始招聘</a>
+                    <a href="#" class="border border-white text-white px-8 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-800 transition">預約演示</a>
+                </div>
+                <div class="mt-8 text-sm text-blue-200">
+                    <i class="fas fa-check-circle mr-2"></i>14天免費試用 &nbsp;&nbsp;
+                    <i class="fas fa-check-circle mr-2"></i>無需綁定信用卡
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <!-- 模擬 Dashboard 圖像 -->
+                <div class="bg-white rounded-xl shadow-2xl p-6 w-full max-w-md text-gray-800">
+                    <div class="flex justify-between items-center mb-4 border-b pb-2">
+                        <h3 class="font-bold text-lg">候選人匹配分析</h3>
+                        <span class="bg-green-100 text-green-600 px-2 py-1 rounded text-xs">AI Analysis</span>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-center p-3 bg-gray-50 rounded hover:bg-blue-50 cursor-pointer">
+                            <div class="w-10 h-10 rounded-full bg-gray-300 mr-3"></div>
+                            <div class="flex-1">
+                                <div class="font-bold">張志明 (Sr. Engineer)</div>
+                                <div class="text-xs text-gray-500">匹配度: 98% | 技能: Python, React</div>
+                            </div>
+                            <i class="fas fa-chevron-right text-gray-400"></i>
+                        </div>
+                        <div class="flex items-center p-3 bg-gray-50 rounded hover:bg-blue-50 cursor-pointer">
+                            <div class="w-10 h-10 rounded-full bg-gray-300 mr-3"></div>
+                            <div class="flex-1">
+                                <div class="font-bold">李美惠 (Product Manager)</div>
+                                <div class="text-xs text-gray-500">匹配度: 92% | 技能: Agile, Jira</div>
+                            </div>
+                            <i class="fas fa-chevron-right text-gray-400"></i>
+                        </div>
+                    </div>
+                    <div class="mt-4 text-center text-blue-600 text-sm font-bold">查看更多匹配結果</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 功能特點 -->
+    <section id="features" class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">為什麼選擇 TalentBridge Pro?</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">我們不僅僅是一個 ATS（申請人追蹤系統），我們是您的全方位人才戰略夥伴。</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-10">
+                <!-- Feature 1 -->
+                <div class="bg-white p-8 rounded-xl shadow hover:shadow-xl transition border-t-4 border-blue-500">
+                    <div class="text-blue-600 text-4xl mb-4"><i class="fas fa-robot"></i></div>
+                    <h3 class="text-xl font-bold mb-3">AI 智能篩選</h3>
+                    <p class="text-gray-600">自動解析數千份簡歷，根據關鍵詞、語義分析和過往經驗，幾秒鐘內找出最匹配的候選人。</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="bg-white p-8 rounded-xl shadow hover:shadow-xl transition border-t-4 border-green-500">
+                    <div class="text-green-600 text-4xl mb-4"><i class="fas fa-chart-line"></i></div>
+                    <h3 class="text-xl font-bold mb-3">數據驅動決策</h3>
+                    <p class="text-gray-600">可視化招聘漏斗，分析招聘渠道ROI，幫助 HR 團隊優化預算並提高招聘效率。</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="bg-white p-8 rounded-xl shadow hover:shadow-xl transition border-t-4 border-purple-500">
+                    <div class="text-purple-600 text-4xl mb-4"><i class="fas fa-users-cog"></i></div>
+                    <h3 class="text-xl font-bold mb-3">自動化工作流</h3>
+                    <p class="text-gray-600">從發送面試邀請、安排時間到發送 Offer，全流程自動化，讓 HR 專注於人與人的連結。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 運作流程 -->
+    <section id="how-it-works" class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900">簡單三步，鎖定人才</h2>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
+                <div class="w-full md:w-1/3 text-center px-4">
+                    <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold text-blue-600 mx-auto mb-6 shadow">1</div>
+                    <h4 class="text-xl font-bold mb-2">發布職位</h4>
+                    <p class="text-gray-600">一鍵發布至 LinkedIn、104 及公司官網，集中管理所有來源。</p>
+                </div>
+                <div class="hidden md:block text-gray-300 text-4xl"><i class="fas fa-angle-right"></i></div>
+                <div class="w-full md:w-1/3 text-center px-4">
+                    <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold text-blue-600 mx-auto mb-6 shadow">2</div>
+                    <h4 class="text-xl font-bold mb-2">AI 匹配與評估</h4>
+                    <p class="text-gray-600">系統自動評分並排序，發送線上測評，篩除不合格人選。</p>
+                </div>
+                <div class="hidden md:block text-gray-300 text-4xl"><i class="fas fa-angle-right"></i></div>
+                <div class="w-full md:w-1/3 text-center px-4">
+                    <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold text-blue-600 mx-auto mb-6 shadow">3</div>
+                    <h4 class="text-xl font-bold mb-2">面試與錄用</h4>
+                    <p class="text-gray-600">協同團隊評價，自動生成 Offer Letter，完成入職流程。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 定價方案 -->
+    <section id="pricing" class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">靈活的企業方案</h2>
+                <p class="text-gray-600">無論是新創團隊還是跨國企業，都有適合您的選擇。</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Plan 1 -->
+                <div class="border border-gray-200 rounded-xl p-8 hover:shadow-lg transition">
+                    <h3 class="text-xl font-bold mb-4">成長版 (Growth)</h3>
+                    <div class="text-4xl font-bold mb-6">$199 <span class="text-lg font-normal text-gray-500">/月</span></div>
+                    <ul class="space-y-3 text-gray-600 mb-8">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>3 個活躍職位</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>基礎 AI 篩選</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>電子郵件支持</li>
+                    </ul>
+                    <a href="#" class="block w-full text-center border border-blue-600 text-blue-600 py-3 rounded-lg font-bold hover:bg-blue-50">選擇此方案</a>
+                </div>
+                <!-- Plan 2 -->
+                <div class="border-2 border-blue-600 rounded-xl p-8 relative shadow-xl bg-white transform md:-translate-y-4">
+                    <div class="absolute top-0 right-0 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg">最熱門</div>
+                    <h3 class="text-xl font-bold mb-4 text-blue-600">專業版 (Pro)</h3>
+                    <div class="text-4xl font-bold mb-6">$499 <span class="text-lg font-normal text-gray-500">/月</span></div>
+                    <ul class="space-y-3 text-gray-600 mb-8">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>10 個活躍職位</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>進階 AI 語意分析</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>團隊協作權限</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>招聘數據報表</li>
+                    </ul>
+                    <a href="#" class="block w-full text-center bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700">選擇此方案</a>
+                </div>
+                <!-- Plan 3 -->
+                <div class="border border-gray-200 rounded-xl p-8 hover:shadow-lg transition">
+                    <h3 class="text-xl font-bold mb-4">企業版 (Enterprise)</h3>
+                    <div class="text-4xl font-bold mb-6">客製化</div>
+                    <ul class="space-y-3 text-gray-600 mb-8">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>無限職位發布</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>專屬 API 串接</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>本地化部署選項</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>24/7 專屬客服</li>
+                    </ul>
+                    <a href="#" class="block w-full text-center border border-gray-400 text-gray-600 py-3 rounded-lg font-bold hover:bg-gray-100">聯繫業務</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-2">
+                    <span class="text-2xl font-bold mb-4 block"><i class="fas fa-bridge mr-2"></i>TalentBridge Pro</span>
+                    <p class="text-gray-400 max-w-sm">致力於通過技術創新，為企業與人才搭建最效率的橋樑。讓招聘更簡單，讓職涯更精彩。</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">產品</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">功能介紹</a></li>
+                        <li><a href="#" class="hover:text-white">定價方案</a></li>
+                        <li><a href="#" class="hover:text-white">更新日誌</a></li>
+                        <li><a href="#" class="hover:text-white">API 文檔</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">公司</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">關於我們</a></li>
+                        <li><a href="#" class="hover:text-white">加入團隊</a></li>
+                        <li><a href="#" class="hover:text-white">聯絡我們</a></li>
+                        <li><a href="#" class="hover:text-white">隱私權政策</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-500">
+                &copy; 2023 TalentBridge Pro Inc. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 簡單的平滑滾動效果
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
